@@ -38,9 +38,12 @@ int _printf(const char *format, ...)
 					break;
 			}
 		}
-		_putchar(format[i]);
-		printed++;
-		i++;
+		if (format[i])
+		{
+			_putchar(format[i]);
+			printed++;
+			i++;
+		}
 	}
 	va_end(args);
 
