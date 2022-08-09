@@ -38,7 +38,7 @@ int _printf(const char *format, ...)
 					break;
 			}
 		}
-		if (format[i] != '\0')
+		if (format[i] != '%')
 		{
 			_putchar(format[i]);
 			printed++;
