@@ -42,8 +42,8 @@ int _printf(const char *format, ...)
 		{
 			_putchar(format[i]);
 			printed++;
-			i++;
 		}
+		i++;
 	} va_end(args);
 	return (printed);
 }
