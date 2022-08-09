@@ -30,6 +30,11 @@ int _printf(const char *format, ...)
 					printed = 1;
 					i = i + 2;
 					break;
+				default:
+					_putchar(format[i]);
+					_putchar(format[i + 1]);
+					i = i + 2;
+					break;
 			}
 		}
 		if (format[i] != '%')

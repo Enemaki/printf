@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_string- prints a string
- * args: variable list
+ * @args: variable list
  * Return: number of characters printed
  */
 
