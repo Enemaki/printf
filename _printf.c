@@ -33,7 +33,6 @@ int _printf(const char *format, ...)
 				default:
 					_putchar(format[i]);
 					_putchar(format[i + 1]);
-					printed += 2;
 					i = i + 2;
 					break;
 			}
