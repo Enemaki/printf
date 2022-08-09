@@ -38,12 +38,12 @@ int _printf(const char *format, ...)
 					break;
 			}
 		}
-		if (format[i])
+		if (format[i] != '\0')
 		{
 			_putchar(format[i]);
 			printed++;
+			i++;
 		}
-		i++;
 	}
 	va_end(args);
 	return (printed);
