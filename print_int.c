@@ -38,7 +38,7 @@ int print_number(va_list args)
 }
 /**
  * print_int- program prints an int
- * @num: number to be printed
+ * @args: list of arguments
  * Return: number of characters printed
  */
 int print_int(va_list args)
