@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-/* Flag Modifier Macros */
+/* Flags Modifier Macros */
 #define PLUS 1
 #define SPACE 2
 #define HASH 4
