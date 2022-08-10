@@ -30,6 +30,14 @@ int _printf(const char *format, ...)
 					printed++;
 					i = i + 2;
 					break;
+				case 'd':
+					printed += print_int(args);
+					i = i + 2;
+					break;
+				case 'i':
+					printed += print_int(args);
+					i = i + 2;
+					break;
 				default:
 					_putchar(format[i]);
 					_putchar(format[i + 1]);
