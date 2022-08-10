@@ -18,41 +18,32 @@ int _printf(const char *format, ...)
 			switch (format[i + 1])
 			{
 				case 'c':
-					printed += print_char(args);
-					i = i + 2;
+					printed += print_char(args), i = i + 2;
 					break;
 				case 's':
-					printed += print_string(args);
-					i = i + 2;
+					printed += print_string(args), i = i + 2;
 					break;
 				case '%':
 					_putchar('%');
-					printed++;
-					i = i + 2;
+					printed++, i = i + 2;
 					break;
 				case 'd':
-					printed += print_int(args);
-					i = i + 2;
+					printed += print_int(args), i = i + 2;
 					break;
 				case 'i':
-					printed += print_int(args);
-					i = i + 2;
+					printed += print_int(args), i = i + 2;
 					break;
 				default:
-					_putchar(format[i]);
-					_putchar(format[i + 1]);
-					printed += 2;
-					i = i + 2;
+					_putchar(format[i]), _putchar(format[i + 1]);
+					printed += 2, i = i + 2;
 					break;
 			}
 		}
 		if (format[i] != '%')
 		{
 			_putchar(format[i]);
-			printed++;
-			i++;
+			printed++, i++;
 		}
-	}
-	va_end(args);
+	} va_end(args);
 	return (printed);
 }
